@@ -1,20 +1,22 @@
-# Mercedes-Benz-Greener-Manufacturing
-Description
+Optimizing Mercedes-Benz Test Bench Time
+**Problem Statement
 
-Reduce the time a Mercedes-Benz spends on the test bench.
+Mercedes-Benz seeks to reduce the time cars spend on the test bench to enhance efficiency and decrease carbon emissions without compromising safety standards. The goal is to develop an algorithm that accurately predicts testing time for various car configurations.
 
-Problem Statement Scenario:
-Since the first automobile, the Benz Patent Motor Car in 1886, Mercedes-Benz has stood for important automotive innovations. These include the passenger safety cell with a crumple zone, the airbag, and intelligent assistance systems. Mercedes-Benz applies for nearly 2000 patents per year, making the brand the European leader among premium carmakers. Mercedes-Benz is the leader in the premium car industry. With a huge selection of features and options, customers can choose the customized Mercedes-Benz of their dreams.
+Data Analysis and Modeling Approach
+Data Preprocessing
+Remove Zero-Variance Features: Identify and eliminate columns with no variation in values.
+Handle Missing Values: Address null values using appropriate techniques (e.g., imputation, removal).
+Label Encoding: Convert categorical features into numerical representations.
+Feature Engineering
+Create New Features: Explore creating new features that might improve predictive power.
+Incorporate Domain Knowledge: Consider domain knowledge and relationships between existing features.
+Dimensionality Reduction
+Use techniques like PCA or t-SNE to reduce the dimensionality of the data, improving computational efficiency and potentially enhancing model performance.
+XGBoost Modeling
+Train an XGBoost model on the preprocessed data.
+Hyperparameter Tuning: Fine-tune hyperparameters (e.g., learning rate, number of estimators) for optimal performance.
+Model Evaluation
+Evaluate the model using metrics like MSE, RMSE, or MAE.
+Cross-Validation: Employ cross-validation to assess generalization.
 
-To ensure the safety and reliability of every unique car configuration before they hit the road, the company’s engineers have developed a robust testing system. As one of the world’s biggest manufacturers of premium cars, safety and efficiency are paramount on Mercedes-Benz’s production lines. However, optimizing the speed of their testing system for many possible feature combinations is complex and time-consuming without a powerful algorithmic approach.
-
-You are required to reduce the time that cars spend on the test bench. Others will work with a dataset representing different permutations of features in a Mercedes-Benz car to predict the time it takes to pass testing. Optimal algorithms will contribute to faster testing, resulting in lower carbon dioxide emissions without reducing Mercedes-Benz’s standards.
-
-Following actions should be performed:
-
-If for any column(s), the variance is equal to zero, then you need to remove those variable(s).
-Check for null and unique values for test and train sets.
-Apply label encoder.
-Perform dimensionality reduction.
-Predict your test_df values using XGBoost.
-Find the datasets here.
